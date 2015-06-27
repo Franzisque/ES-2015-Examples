@@ -1,9 +1,11 @@
 /**
  * variable only existent in if-scope
  */
-if (true){
+var chatUserExistent = false;
 
-    let chatUserExistent = 1;
+if (!chatUserExistent) {
+
+    let chatUser = new ChatUser();
 
 }
 

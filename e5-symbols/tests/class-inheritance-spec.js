@@ -1,8 +1,8 @@
 var assert = require("assert");
 
-describe('test inheritance', function() {
+describe('coming soon', function() {
 
-    describe('check first function', () => {
+    describe('tests are coming soon', () => {
         it('0 is 0', () => assert.equal(0, 0));
     });
 });
