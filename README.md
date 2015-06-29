@@ -1,4 +1,4 @@
-ES 6 Examples
+ECMAScript 2015 Examples
 =============
 
 - $ npm install

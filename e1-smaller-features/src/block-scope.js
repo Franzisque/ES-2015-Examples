@@ -5,7 +5,7 @@ var chatUserExistent = false;
 
 if (!chatUserExistent) {
 
-    let chatUser = new ChatUser();
+    //let chatUser = new ChatUser();
 
 }
 

@@ -43,10 +43,9 @@ var returnAChatMessageObject = function returnAChatMessageObject() {
  */
 "use strict";
 
-if (true) {
+var chatUserExistent = false;
 
-  var chatUserExistent = 1;
-}
+if (!chatUserExistent) {}
 
 /**
  * i is not defined because of block-scope
@@ -61,26 +60,71 @@ function loopOverChatUsers() {
   return i;
 }
 
+//let chatUser = new ChatUser();
+
 // do something with the chatUsers
 
 },{}],3:[function(require,module,exports){
+/**
+ * function with default parameter in ES 5
+ * @param user
+ * @returns {}
+ */
 "use strict";
 
 function setChatUser(user) {
 
-    user = typeof user !== "undefined" ? user : "unnamed user";
+  user = typeof user !== "undefined" ? user : "unnamed user";
 
-    return user;
+  return user;
 }
 
+/**
+ * default parameter in ES 6
+ * @param user
+ * @returns {*}
+ */
 function setChatUser() {
-    var user = arguments[0] === undefined ? "unnamed user" : arguments[0];
+  var user = arguments[0] === undefined ? "unnamed user" : arguments[0];
 
-    return user;
+  return user;
 }
 
 },{}],4:[function(require,module,exports){
 "use strict";
+
+var chatUserArray = ["Ann", "Tom", "Bob"];
+chatUserArray.newUser = "Sally";
+
+for (var chatUser in chatUserArray) {
+
+    console.log(chatUser);
+}
+
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+    for (var _iterator = chatUserArray[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var chatUser = _step.value;
+
+        console.log(chatUser);
+    }
+} catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion && _iterator["return"]) {
+            _iterator["return"]();
+        }
+    } finally {
+        if (_didIteratorError) {
+            throw _iteratorError;
+        }
+    }
+}
 
 },{}],5:[function(require,module,exports){
 /**

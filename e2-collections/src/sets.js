@@ -1,10 +1,31 @@
-// size is 1
-let set = new Set();
+/**
+ * add values to set
+ * @type {*|number}
+ */
+let chatMessageSet = new Set()
+    .add("Hello!")
+    .add("Hi");
 
-set.add(1);
-set.add(1);
+/**
+ * check if set hast value Hello!
+ */
+chatMessageSet.has("Hello!");
 
-// 1 and '1' are different and
-// add is chainable
-let set = new Set();
-set.add(1).add('1');
+/**
+ * try to add an existing value
+ */
+chatMessageSet.add("Hi");
+
+/**
+ * size is still 2
+ */
+chatMessageSet.size;
+
+/**
+ * log Hello! and Hi
+ */
+for (let chatMessage of chatMessageSet) {
+
+    console.log(chatMessage);
+
+}

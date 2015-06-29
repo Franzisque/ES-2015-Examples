@@ -1,0 +1,1 @@
+console.error("Error: Cannot find module '/Users/Franzi/Documents/MMT/6.Semester/BachelorArbeit2/Repos-Praktischer-Teil/ES6-Examples/e2-collections/src/maps-store.js' from '/Users/Franzi/Documents/MMT/6.Semester/BachelorArbeit2/Repos-Praktischer-Teil/ES6-Examples/e2-collections'");
